@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var obj = {
+            name:'ken',
+            age:19,
+            info:{
+                sex:'Man',
+                height:180
+            }
+        }
+
+        function deepClone(origin,target){
+            var target = target || {}
+            var toStr = Object.prototype.toString;
+            var arrStr = '[object Array]'
+
+            for(var i in origin) {
+                if(origin.hasOwnProperty(i)){
+                    if(typeof(origin[i]) == 'object' && origin[i] !== null){
+                        if(toStr.call(origin[i]) == arrStr){
+                            target[i] = []
+                        } else {
+                            target[i] = {}
+                        }
+                        deepClone(origin[i],target[i])
+                    } else {
+                        target[i] = origin[i]
+                    }
+                }
+            }
+            return target
+        }
+        console.log(deepClone(obj))
+    </script>
+</body>
+</html>

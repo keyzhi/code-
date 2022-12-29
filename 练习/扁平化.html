@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = [[1,2,2],[3,4,5,5],[6,7,8,9,[11,12,[12,13,[14]]]],10];
+        //方法一 for循环
+        // function flatten(arr){
+        //     var _arr = arr || []
+        //     var farr = [];
+        //     var len = _arr.length;
+        //     var item;
+        //     for(var i =0;i<len;i++){
+        //         item = _arr[i]
+        //         // 如果i元素是数组，则递归，否则push进farr数组
+        //         if (_isArr(item)){
+        //             farr = farr.concat(flatten(item))
+        //         } else {
+        //             farr.push(item)
+        //         }
+        //     }
+        //     // 判断是否为数组
+        //     function _isArr(item){
+        //         // return Object.prototype.toString.call(item) == '[object Array]';
+        //         return {}.toString.call(item) == '[object Array]';
+        //     }
+
+        //     return farr
+        // }
+
+        // console.log(flatten(arr))
+
+        //方法二 数组原型添加方法
+
+        // Array.prototype.flatten = function(){
+        //     var _arr = this;
+        //     var toStr = {}.toString;
+        //     if (toStr.call(_arr) !=='[object Array]'){
+        //         throw new Error('只有数组才能调用flatten方法');
+        //     }
+        //     var fArr = []
+        //     _arr.forEach(function (item){
+        //         toStr.call(item) =='[object Array]'? fArr = fArr.concat(item.flatten()) : fArr.push(item)
+        //     })
+        //     return fArr
+        // }
+
+        // Array.prototype.flatten = function(){
+        //     var _arr = this;
+        //     var toStr = {}.toString;
+        //     if (toStr.call(_arr) !=='[object Array]'){
+        //         throw new Error('只有数组才能调用flatten方法');
+        //     }
+        //     var fArr = []
+            
+        //     return _arr.reduce(function (prev,item){
+        //         return prev.concat(toStr.call(item) =='[object Array]'?item.flatten():item)
+
+        //     },[])
+
+        //     return fArr
+        // }
+
+        // console.log(arr.flatten())
+
+
+        // ES6
+        // const flatten = arr => arr.reduce((prev,item) => prev.concat({}.toString.call(item) == '[object Array]'?flatten(item):item),[])
+
+        // console.log(flatten(arr))
+
+
+        console.log(arr.flat(Infinity))
+
+    </script>
+</body>
+</html>

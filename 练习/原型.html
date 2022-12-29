@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // function Car(){}
+        // Car.prototype.name = 'hhhhhh'
+        // var car = new Car()
+        // console.log(Car.prototype)
+        // console.log(Car.prototype.__proto__)
+        // console.log(car.__proto__)
+
+
+        // function Foo() {
+        //     getName = function(){
+        //         console.log(1);
+        //     }
+        //     return this
+        // }
+        // Foo.getName = function(){
+        //     console.log(2);
+        // }
+        // Foo.prototype.getName = function(){
+        //     console.log(3);
+        // }
+        // var getName = function(){
+        //     console.log(4);
+        // }
+        // function getName(){
+        //     consolt.log(5)
+        // }
+        // Foo.getName()//2  直接调用Foo.getName()
+        // getName();//4 GO: var getName - function getName
+        // Foo().getName()//1
+        // getName()//1
+        // new Foo.getName()// 2
+        // new Foo().getName()//3
+        // new new Foo().getName()//3
+
+        //自己写一个数组的unshift函数
+        var arr = ['d','e','f']
+        Array.prototype.myUnshift = function(){
+            var index = 0;
+            // 方法一：
+            // for(var i = 0 ;i<arguments.length;i++) {
+            //     this.splice(index,0,arguments[i])
+            //     index++
+            // }
+            // return this.length;
+            //方法二：使用concat方法
+            var arrArr = Array.prototype.slice.call(arguments)
+            var newArr = arrArr.concat(this)
+            return newArr
+        }
+        // 方法一:
+        // arr.myUnshift('1',2,3,4)
+        // console.log(arr)
+
+        // 方法二:
+        var newarr = arr.myUnshift('a')
+        console.log(newarr)
+    </script>
+</body>
+</html>
