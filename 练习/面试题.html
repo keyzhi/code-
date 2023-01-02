@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 题目:if(a==1&&a==2&&a==3){
+        //     console.log('you win')
+        // }
+        // var a = {
+        //     _a:0,
+        //     toString(){ //对象和字符串或数字判断，都会经过toString方法
+        //         return ++this._a
+        //     }
+        // }
+
+
+        // if(a==1&&a==2&&a==3){
+        //     console.log('you win')
+        // }
+
+        // 题目:if(a===1&&a===2&&a===3){  //全等只能判断数字
+        //     console.log('you win')
+        // }
+        // var _a = 0
+        // Object.defineProperty(window,'a',{
+        //     get(){
+        //         return ++_a
+        //     }
+        // })
+        // window = {
+        //     get a(){
+        //         return ++_a
+        //     }
+        // }
+        // if(a===1&&a===2&&a===3){  //全等只能判断数字
+        //     console.log('you win!!')
+        // }
+
+        // 题目:if(obj.a===1&&obj.a===2&&obj.a===3){  
+        //     console.log('you win')
+        // }
+
+        // 方法一：
+        // var obj = {
+        //     _a:0,
+        //     get a(){
+        //         return ++this._a
+        //     }
+        // }
+
+        // 方法二：
+       var obj={_a:0}
+       Object.defineProperty(obj,'a',{
+           get(){
+            //    console.log(this)
+               return ++obj._a
+           }
+       })
+        
+        if(obj.a===1&&obj.a===2&&obj.a===3){  
+            console.log('you win!!!')
+        }
+    </script>
+</body>
+</html>

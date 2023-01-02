@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // var a = 0;
+        // console.log(a)
+        // if (true){
+        //     a = 1;
+        //     function a(){}
+        //     a = 2;
+        //     console.log(a)
+        // }
+        // console.log(a)
+
+        
+        // 谷歌 火狐认为直到出现函数声明，变量a出现了局部作用，函数被当初表达式，而不是一个声明
+        // var a = 0;
+        // console.log(a) //0
+        // if (true){
+        //     a = 1;
+        //     let a1 = function (){}
+        //     a1 = 2;
+        //     console.log(a1) //2
+        // }
+        // console.log(a) // 1
+
+
+        //IE11 和 edge浏览器 认为 函数声明为全局, 并且, 函数也没有进行提升, 而是当成了表达式
+        var a = 0;
+        console.log(a) //0
+        if (true){
+            let a1 = 1;
+            window.a = function (){}
+            a1 = 2;
+            console.log(a1) //2
+        }
+        console.log(a) // // fn...
+
+
+        // 总结
+        // 当函数被声明在判断语句内部时,
+
+        // 所有浏览器都将 函数声明 当成了表达式(赋值声明)
+
+        // 并且, 对于是否为全局声明, 也有分歧.
+    </script>
+</body>
+</html>
+
+
