@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <script type="text/javascript">
+        /**
+            this -> 函数内部的一个执行期的上下文指向
+
+        */
+
+    // 1.    
+        //'use strict'
+
+        //this明确指向的时机:执行期
+
+        //函数的执行条件与环境决定了this -> ???
+
+        // function test(){
+
+        //     // this -> window
+        //     //use strict: this->undefined
+        //     console.log(this) // window
+        // }
+
+        // test()
+
+
+        // var obj = {
+
+        //     test:test
+        // }
+
+        // 谁调用test ->test内部的this -> 谁
+        // obj.test() // obj
+
+        //一个函数内部是有隐式的this
+        // 当函数执行的时候，决定this->谁
+
+    // 2.        
+        /*
+            1.在函数内部隐式创建一个对象
+            2.this -> 这个新对象
+            3.将this上挂载的属性，放入到新对象中
+            {
+                a:1
+            }
+        
+        */
+
+        // function test1() {
+        //     this.a = 1
+        //     console.log(this)
+        // }
+
+        //new
+        //指示函数test1执行
+        //函数内部的this -> 新的对象
+        //执行期间返回this
+
+        // var t = new test1();
+        // console.log(t)
+
+    // 3.
+        // function test (callback){
+        //     callback();
+        // }
+
+        //函数声明与函数表达式中的this在非严格模式下，自调用，this —> window
+
+        // test(function(){
+        //     console.log(this) //window
+        // })
+
+
+        // var obj = {
+        //     test:function(callback){
+        //         callback()
+        //     }
+        // }
+
+        // obj.test(function(){
+        //     console.log(this)
+        // })
+
+
+        // var obj = {
+        //     test:function(){
+        //         var test1 = function(){
+        //             console.log(this); //window
+        //         }
+        //         test1() // 属于自调用
+        //     }
+        // }
+
+        // obj.test()
+
+
+        // var obj = {
+        //     test:function(){
+        //         obj.test1 = function(){
+        //             console.log(this); //onj
+        //         }
+        //         obj.test1()
+        //     }
+        // }
+
+        // obj.test()
+
+
+        // 4.
+            // document.querySelector('#btn').addEventListener('click',function(){
+            //     console.log(this) //button 元素本身
+            // },false)
+
+            // obj = {
+            //     a:1,
+            //     b:2
+            // }
+            // document.querySelector('#btn').addEventListener('click',test.bind(obj),false)
+
+            // function test(){
+            //     console.log(this)
+            // }
+
+            // var obj = {}
+            // obj.p = new Promise(function (resolve,reject){
+            //     console.log(this)
+            // })
+            // var obj = {
+            //     test:function(){
+            //         console.log(this)
+            //     }
+            // }
+            // obj.test() //obj
+            // var a = obj.test;
+            // console.log(a()) //window
+
+        // 5.箭头函数
+
+        /**
+           函数声明：function test(){}
+           函数表达式： var test = function(){}
+           函数声明和函数表达式内部的this-> 由执行期的环境和调用方式决定的 ->不稳定的
+
+           箭头函数 —> 稳定程序中的this指向
+        */
+
+        // var test =()=>{
+        //     console.log(this) //window  即使是 use strict模式下也是指向window
+        // }
+
+        // test()
+
+
+        // var obj = {
+        //     test:()=>{
+        //         console.log(this)
+        //     }
+        // }
+        
+        // obj.test() //window
+
+        // var obj = {
+        //     test:()=>{
+        //         父作用域 -> global ->window
+        //         console.log(this)
+        //         var test1 =()=>{
+        //             console.log(this)
+        //         }
+        //         test1() //window
+        //     }
+        // }
+        
+        // obj.test() //window
+        
+        
+        //箭头函数 this -> 始终保持与父级作用域的this一致
+        // var obj = {
+        //     test(){
+        //         //this -> obj
+        //         var test1 =()=>{
+        //             console.log(this)
+        //         }
+        //         test1() //obj
+        //     }
+        // }
+        
+        // obj.test()
+
+
+        // document.querySelector('#btn').addEventListener('click',()=>{
+        //     // 父作用域 -> global -> window
+        //     console.log(this) //window
+        // },false)
+
+
+        var obj = {
+            test(callback){
+                callback()
+            }
+        }
+        // callback父作用域 -> global ->window
+        obj.test(()=>{
+            console.log(this) //window
+        })
+
+    </script>
+</body>
+</html>
