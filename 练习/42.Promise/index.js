@@ -1,20 +1,17 @@
-// let promise = new Promise((resolve,reject)=>{ //executor 执行器
+const MyPromise = require('./promise4')
 
-const MyPromise = require('./MyPromise')
-
-// })
-
-
-let myPromise = new MyPromise((resolve,reject)=>{
-    // resolve('success')
-    // reject('reject')
-    throw new Error('Exception:Error')
+let promise1 = new MyPromise((resolve,reject)=>{
+    resolve('promise1')
 })
 
-myPromise.then((val)=>{
-    console.log('success1111:',val)
-},(err)=>{
-    console.log('reject1111:',err)
+let promise2 = promise1.then((value)=>{
+    // throw new Error('')
+    // return Promise.resolve(value + '-> then -> promise2')
+    return value + '-> then -> promise2';
+    // return new Promise((resolve,reject)=>{
+    //     resolve(value+ '-> then -> promise2')
+    // })
 })
-
-// console.log('myPromise:',MyPromise.prototype)
+.then((value)=>{
+    console.log(value)
+})
