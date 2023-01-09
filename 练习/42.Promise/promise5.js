@@ -2,8 +2,44 @@ const PENDING = 'PENDING',
       FULFILLED = 'FULFILLED',
       REJECTED = 'REJECTED';
 
+//判断x类型
 function resolvePromise(promise2,x,resolve,reject){
-    console.log(promise2)
+    // console.log(promise2)
+    // console.log('TypeError: Chaining cycle detected for promise #<Promise>')
+    if (promise2 === x){
+        return reject(new TypeError('TypeError: Chaining cycle detected for promise #<Promise>'))
+    }
+    let called = false;
+    if ((typeof x === 'object' && x !== null) || typeof x === 'function') {
+        try {
+            let then = x.then;// throw error ?
+
+            if (typeof then === 'function'){//Promise
+                then.call(x,(y)=>{
+                    if (called) return;
+                    called = true
+                    console.log('yhhh:',y)
+                    // resolve(y)
+                    resolvePromise(promise2,y,resolve,reject)
+                },(r)=>{
+                    if (called) return;
+                    called = true
+                    reject(r)
+                })
+    
+            } else {
+                resolve(x)
+            }
+            
+        } catch (e) {
+            if (called) return;
+            called = true
+            reject(e)
+        }
+
+    } else{
+        resolve(x)
+    }
 }
 class MyPromise{
     constructor(executor) {
@@ -15,6 +51,7 @@ class MyPromise{
         this.onRejectedCallback = []
         
         const resolve = (value)=>{
+            // console.log('value111:',value)
             if(this.status === PENDING){
                 this.status = FULFILLED
                 this.value = value
@@ -40,11 +77,14 @@ class MyPromise{
 
     // x 普通值  promise
     then(onFulfilled,onRejected) {
+        onFulfilled = typeof onFulfilled === 'function'? onFulfilled:value=>value
+        onRejected = typeof onRejected === 'function'? onRejected:reason=>{throw reason}
         let promise2 = new MyPromise((resolve,reject)=>{
             if(this.status === FULFILLED){
                 setTimeout(()=>{
                     try {
                         let x = onFulfilled(this.value)
+                        console.log('thenx:',x)
                         resolvePromise(promise2,x,resolve,reject)
                     } catch (e) {
                         console.log(e)
@@ -93,9 +133,13 @@ class MyPromise{
         })
         return promise2;
     }
+
+    catch(errorCallback) {
+        return this.then(null,errorCallback)
+    }
 }
 
 
-
+//https://blog.csdn.net/woyebuzhidao321/article/details/109395402
 
 module.exports = MyPromise
