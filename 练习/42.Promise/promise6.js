@@ -52,6 +52,15 @@ class MyPromise{
         
         const resolve = (value)=>{
             // console.log('value111:',value)
+
+            if(value instanceof MyPromise){
+                // value.then((x)=>{
+                //     resolve(x);
+                // },reject)
+                value.then(resolve,reject)
+                return
+            }
+
             if(this.status === PENDING){
                 this.status = FULFILLED
                 this.value = value
@@ -157,3 +166,4 @@ MyPromise.defer = MyPromise.deferred = function(){
 }
 
 module.exports = MyPromise
+

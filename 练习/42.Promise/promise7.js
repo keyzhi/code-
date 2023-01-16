@@ -52,6 +52,15 @@ class MyPromise{
         
         const resolve = (value)=>{
             // console.log('value111:',value)
+
+            if(value instanceof MyPromise){
+                // value.then((x)=>{
+                //     resolve(x);
+                // },reject)
+                value.then(resolve,reject)
+                return
+            }
+
             if(this.status === PENDING){
                 this.status = FULFILLED
                 this.value = value
@@ -141,6 +150,18 @@ class MyPromise{
 
     catch(errorCallback) {
         return this.then(null,errorCallback)
+    }
+
+    static resolve(value){
+        return new MyPromise((resolve,reject)=>{
+            resolve(value)
+        })
+    }
+
+    static reject(error){
+        return new MyPromise((resolve,reject)=>{
+            reject(error)
+        })
     }
 }
 
