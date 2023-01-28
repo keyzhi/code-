@@ -1,3 +1,15 @@
+/**
+ * 1.promise基础框架  resolve,reject , then
+ * 
+ * 2.异步及多次调用的时候，then操作
+ * 
+ * 3.链式调用 then 要返回promise，判断 onFulfilled 及onRejected返回的X类型
+ * 
+ */
+
+
+
+
 const PENDING = 'PENDING',
       FULFILLED = 'FULFILLED',
       REJECTED = 'REJECTED';
@@ -163,10 +175,11 @@ class MyPromise{
             reject(error)
         })
     }
+
 }
 
 
-//https://blog.csdn.net/woyebuzhidao321/article/details/109395402
+// //https://blog.csdn.net/woyebuzhidao321/article/details/109395402
 
 MyPromise.defer = MyPromise.deferred = function(){
     let deferred = {}

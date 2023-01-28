@@ -60,7 +60,7 @@
 // })
 
 
-const MyPromise = require('./promise7')
+// const MyPromise = require('./promise7')
 // Promise.resolve('小叶森森').then((res)=>{
 //     console.log(res)
 // })
@@ -81,16 +81,47 @@ const MyPromise = require('./promise7')
 //     console.log(err)
 // })
 
+//成功的条件
+//then return 普通 JavaScript value
+//then return 新的promise成功态的结果 value
 
-MyPromise.resolve(new MyPromise((resolve,reject)=>{
+//失败的条件
+//then return 新的promise失败态的原因 value
+//then 抛出异常  throw new Error
+
+//promise 链式调用
+//javaScript JQuery  return this
+//then  不具备this
+//return new Promise
+
+// MyPromise.resolve(new MyPromise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve('小叶深深')
+//     },2000)
+// })).then((res)=>{
+//         console.log(res)
+// })
+
+// MyPromise.reject('no 小叶森森').catch((err)=>{
+//     console.log(err)
+// })
+
+
+
+const MyPromise = require('./promise9')
+let p1 = new MyPromise((resolve,reject)=>{
     setTimeout(()=>{
-        resolve('小叶深深')
-    },2000)
-})).then((res)=>{
-        console.log(res)
+        resolve('success')
+    },1000)
+});
+
+let p2 = new MyPromise((resolve,reject)=>{
+    reject('error')
 })
 
-MyPromise.reject('no 小叶森森').catch((err)=>{
+
+MyPromise.allSettled(null).then((res)=>{
+    console.log(res)
+}).catch((err)=>{
     console.log(err)
 })
-

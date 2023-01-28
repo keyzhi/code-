@@ -44,6 +44,7 @@ class MyPromise{
             if(this.status === FULFILLED){
                 setTimeout(()=>{
                     try {
+                        console.log('then:',this.value)
                         let x = onFulfilled(this.value)
                         resolvePromise(promise2,x,resolve,reject)
                     } catch (e) {
