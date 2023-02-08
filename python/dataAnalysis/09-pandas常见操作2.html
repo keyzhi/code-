@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>08-pandas常见操作</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>09-pandas常见操作2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14594,8 +14594,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 </pre></div>
 
      </div>
@@ -14603,1002 +14603,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">,</span><span class="s1">&#39;three&#39;</span><span class="p">],</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">])</span>
-<span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>one</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>two</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>three</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E4%BF%AE%E6%94%B9%E7%B4%A2%E5%BC%95">&#20462;&#25913;&#32034;&#24341;<a class="anchor-link" href="#%E4%BF%AE%E6%94%B9%E7%B4%A2%E5%BC%95">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1.通过属性的方式去修改索引<br />
-语法:<br />
-DataFrame.index/columns = 值</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 修改行索引</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NO1&#39;</span><span class="p">,</span><span class="s1">&#39;NO2&#39;</span><span class="p">,</span><span class="s1">&#39;NO3&#39;</span><span class="p">]</span>
-<span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 修改列索引</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NOA&#39;</span><span class="p">,</span><span class="s1">&#39;NOB&#39;</span><span class="p">,</span><span class="s1">&#39;NOC&#39;</span><span class="p">]</span>
-<span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>NOA</th>
-      <th>NOB</th>
-      <th>NOC</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2.使用rename的方式修改
-语法:<br />
-DataFrame.rename(mapper= None,index = None, columns = None, axis = None,inplace = False)<br />
-index:新的行索引数据<br />
-columns:用做新的列索引数据<br />
-axis:轴方向<br />
-inplace:是否对原数据进行修改</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>NOA</th>
-      <th>NOB</th>
-      <th>NOC</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用rename+函数的方式来修改行索引</span>
-<span class="k">def</span> <span class="nf">df_rename</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="s1">&#39;_&#39;</span>
-<span class="c1"># 这里没有设置inplace的值为True所以原数据还是没有变化</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">df_rename</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>NOA</th>
-      <th>NOB</th>
-      <th>NOC</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1_</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2_</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3_</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rename+字典结合</span>
-<span class="c1"># 字典内容:{&#39;原索引&#39;:&#39;修改后的索引&#39;}</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;NOA&#39;</span><span class="p">:</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;NOB&#39;</span><span class="p">:</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;NOC&#39;</span><span class="p">:</span><span class="s1">&#39;C&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>3.将某一列数据设置为索引:<br />
-语法:<br />
-DataFrame.set_index(keys, drop= True, inplace = False)<br />
-keys:需要设置为索引的列名<br />
-drop:是否在原数据中删除该列<br />
-inplace:是否对原数据进行修改</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-    <tr>
-      <th>A</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-    <tr>
-      <th>A</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>4.将某条数据设置为索引<br />
-DataFrame.set_axis(labels, axis = 0, inplace)<br />
-labels:新索引的值</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">df1</span><span class="p">[:][</span><span class="s1">&#39;B&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>B</th>
-      <th>1</th>
-      <th>4</th>
-      <th>7</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>NO2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>NO3</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="p">[:][</span><span class="s1">&#39;B&#39;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>NO1    1
-NO2    4
-NO3    7
-Name: B, dtype: int32</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE">&#28155;&#21152;&#25968;&#25454;<a class="anchor-link" href="#%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>DataFrame.append(other, ignore_index = False, verify_integrity = False)<br />
-other:需要添加的数据<br />
-ignore_index:是否给新加的数据设置索引。当添加的数据为字典时需要为True<br />
-verify_integrity:是否禁止出现重复索引,如果设置为True，那么在出现重复索引时会报错。</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15607,9 +14611,20 @@ verify_integrity:是否禁止出现重复索引,如果设置为True，那么在�
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># randint 生成随机整数  rand生成满足正态分布的数  randn生成满足标准正态分布的数</span>
-<span class="n">df2</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">df2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 隐式创建:在生成创建DataFrame的时候手动传入索引，传入的索引个数需要和数据长度相对应，比如</span>
+<span class="c1"># 有4列，那么columns就要传入4个值</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="c1">#生成数据</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)),</span>
+    <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;girl&#39;</span><span class="p">,</span><span class="s1">&#39;boy&#39;</span><span class="p">],</span>
+    <span class="c1">#如果索引是嵌套数据，那么除了最内层外，其他层的数据在一定程度上是可以合并的</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+<span class="c1">#             [&#39;A&#39;,&#39;A&#39;,&#39;A&#39;,&#39;A&#39;],</span>
+            <span class="p">[</span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="s1">&#39;Chinese&#39;</span><span class="p">,</span><span class="s1">&#39;Chinese&#39;</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">&#39;like&#39;</span><span class="p">,</span><span class="s1">&#39;dislike&#39;</span><span class="p">,</span><span class="s1">&#39;like&#39;</span><span class="p">,</span><span class="s1">&#39;dislike&#39;</span><span class="p">]</span>
+            <span class="p">]</span>
+                 <span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
 
      </div>
@@ -15640,250 +14655,39 @@ verify_integrity:是否禁止出现重复索引,如果设置为True，那么在�
         vertical-align: top;
     }
 
-    .dataframe thead th {
-        text-align: right;
+    .dataframe thead tr th {
+        text-align: left;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
+      <th colspan="2" halign="left">English</th>
+      <th colspan="2" halign="left">Chinese</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>like</th>
+      <th>dislike</th>
+      <th>like</th>
+      <th>dislike</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
+      <th>girl</th>
+      <td>79</td>
+      <td>71</td>
+      <td>98</td>
+      <td>97</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>34.430654</td>
-      <td>46.100857</td>
-      <td>16.342708</td>
-      <td>32.399112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>25.130794</td>
-      <td>86.204014</td>
-      <td>92.051368</td>
-      <td>18.457088</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># append不会修改原数据，如果需要保存修改后的结果那么需要拿变量来接收</span>
-<span class="n">df2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:],</span>
-<span class="c1">#           ignore_index:是否给新加的数据设置索引。</span>
-           <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="c1">#           verify_integrity:是否禁止出现重复索引,</span>
-           <span class="n">verify_integrity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\admin\AppData\Local\Temp\ipykernel_46532\2885213813.py:2: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  df2.append(df2.iloc[0:2,:],
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>34.430654</td>
-      <td>46.100857</td>
-      <td>16.342708</td>
-      <td>32.399112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>25.130794</td>
-      <td>86.204014</td>
-      <td>92.051368</td>
-      <td>18.457088</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
+      <th>boy</th>
+      <td>73</td>
+      <td>81</td>
+      <td>90</td>
+      <td>81</td>
     </tr>
   </tbody>
 </table>
@@ -15904,7 +14708,19 @@ verify_integrity:是否禁止出现重复索引,如果设置为True，那么在�
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 显示创建:使用pandas.MultiIndex创建</span>
+<span class="c1"># 自动调整以适应索引数，在构造的时候就不用每个都写</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="c1">#生成数据</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)),</span>
+    <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;girl&#39;</span><span class="p">,</span><span class="s1">&#39;boy&#39;</span><span class="p">],</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_product</span><span class="p">([</span>
+        <span class="c1">#第一层索引</span>
+        <span class="p">[</span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="s1">&#39;Chinese&#39;</span><span class="p">],</span>
+        <span class="c1">#第二层索引</span>
+        <span class="p">[</span><span class="s1">&#39;like&#39;</span><span class="p">,</span><span class="s1">&#39;dislike&#39;</span><span class="p">]])</span>
+                 <span class="p">)</span>
+<span class="n">df1</span>
 </pre></div>
 
      </div>
@@ -15935,203 +14751,39 @@ verify_integrity:是否禁止出现重复索引,如果设置为True，那么在�
         vertical-align: top;
     }
 
-    .dataframe thead th {
-        text-align: right;
+    .dataframe thead tr th {
+        text-align: left;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
+      <th colspan="2" halign="left">English</th>
+      <th colspan="2" halign="left">Chinese</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>like</th>
+      <th>dislike</th>
+      <th>like</th>
+      <th>dislike</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
+      <th>girl</th>
+      <td>97</td>
+      <td>72</td>
+      <td>91</td>
+      <td>80</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>34.430654</td>
-      <td>46.100857</td>
-      <td>16.342708</td>
-      <td>32.399112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>25.130794</td>
-      <td>86.204014</td>
-      <td>92.051368</td>
-      <td>18.457088</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dict</span><span class="o">=</span><span class="p">{</span>
-    <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-    <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="n">data_dict</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{0: 1, 1: 5}</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 会将数据追加到末尾</span>
-<span class="n">df2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\admin\AppData\Local\Temp\ipykernel_46532\3903703609.py:2: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  df2.append(data_dict,ignore_index=True)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>34.430654</td>
-      <td>46.100857</td>
-      <td>16.342708</td>
-      <td>32.399112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>25.130794</td>
-      <td>86.204014</td>
-      <td>92.051368</td>
-      <td>18.457088</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1.000000</td>
-      <td>5.000000</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>boy</th>
+      <td>90</td>
+      <td>81</td>
+      <td>91</td>
+      <td>91</td>
     </tr>
   </tbody>
 </table>
@@ -16151,12 +14803,19 @@ verify_integrity:是否禁止出现重复索引,如果设置为True，那么在�
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>使用insert在指定位置添加数据<br />
-DataFrame.insert(loc, column, value, allow_duplicates)<br />
-loc:int型数据，表示需要将数据添加到第几列<br />
-column:需要添加的列名<br />
-value:需要添加的值<br />
-allow_duplicates:是否允许列名重复</p>
+<p>多级索引的检索</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Series</p>
 
 </div>
 </div>
@@ -16169,997 +14828,13 @@ allow_duplicates:是否允许列名重复</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 这里会对原数据进行修改，不会有返回结果</span>
-<span class="n">df2</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="c1">#            ,allow_duplicates=True</span>
-          <span class="p">)</span>
-<span class="n">df2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>A</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6.809722</td>
-      <td>78.620810</td>
-      <td>1</td>
-      <td>6.896919</td>
-      <td>57.989660</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>27.851589</td>
-      <td>98.475546</td>
-      <td>2</td>
-      <td>88.846477</td>
-      <td>30.767181</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>34.430654</td>
-      <td>46.100857</td>
-      <td>3</td>
-      <td>16.342708</td>
-      <td>32.399112</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>25.130794</td>
-      <td>86.204014</td>
-      <td>4</td>
-      <td>92.051368</td>
-      <td>18.457088</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E6%95%B0%E6%8D%AE%E6%8B%BC%E6%8E%A5">&#25968;&#25454;&#25340;&#25509;<a class="anchor-link" href="#%E6%95%B0%E6%8D%AE%E6%8B%BC%E6%8E%A5">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1.pd.concat(objs, axis= 0, join = 'outer', ignore_index = False,verify_integrity= Fals)<br />
-objs:需要合并的数据,如果数据是多个那么需要用括号括起来<br />
-axis:轴，数据合并的方向<br />
-join:{'inner', 'outer'},其他轴上索引的处理方式，默认为'outer'可以理解为并集，'inner'可以理解为交集<br />
-并集:取2个数据的全部可以理解为之和，交集:取2个数据的公共部分<br />
-ignore_index:是否给新加的数据设置索引<br />
-verify_integrity:是否禁止出现重复索引</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;D&#39;</span><span class="p">])</span>
-<span class="n">df3</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>
-      <td>16</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;D&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;F&#39;</span><span class="p">])</span>
-<span class="n">df4</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>C</th>
-      <th>D</th>
-      <th>E</th>
-      <th>F</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 沿0轴方向拼接</span>
-<span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df3</span><span class="p">,</span><span class="n">df4</span><span class="p">])</span>
-<span class="n">df5</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
-      <th>E</th>
-      <th>F</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>4.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5.0</td>
-      <td>6.0</td>
-      <td>7.0</td>
-      <td>8.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9.0</td>
-      <td>10.0</td>
-      <td>11.0</td>
-      <td>12.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>13.0</td>
-      <td>14.0</td>
-      <td>15.0</td>
-      <td>16.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 沿1轴方向拼接</span>
-<span class="n">df6</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df3</span><span class="p">,</span><span class="n">df4</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df6</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
-      <th>C</th>
-      <th>D</th>
-      <th>E</th>
-      <th>F</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>
-      <td>16</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df6</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df3</span><span class="p">,</span><span class="n">df4</span><span class="p">],</span>
-<span class="c1">#                 axis=0,join针对的是列名  ABCD  CDEF  </span>
-<span class="c1">#                 axis=1,</span>
-                <span class="c1">#其他轴上数据的处理方式</span>
-                <span class="n">join</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span><span class="c1"># 交集 outer并集 </span>
-                <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span>
-               <span class="p">)</span>
-<span class="n">df6</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>3.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>7.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>11.0</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>15.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2.pd.merge(left, right, how = 'inner', on = None, left_on = None, right_on= None, left_index = False, right_index = False, sort = False, suffixes)<br />
-left:参与合并的左侧DataFrame/Series对象<br />
-right:参与合并的右侧DataFrame/Series对象 
-how:连接方式,默认为'inner'可选参数:<br />
-'left':使用左侧的DataFrame的键，左连接<br />
-'right':使用右侧的DataFrame的键，右连接<br />
-'outer':使用2个DataFrame全部的键，外连接<br />
-'inner':使用2个DataFrame键的交集，内连接<br />
-on:用于连接的列名。必须存在于2个DataFrame对象中<br />
-left_on:以左侧的DataFrame的键作为连接键<br />
-right_on:以右侧的DataFrame的键作为连接键<br />
-left_index:以左侧DataFrame的行索引作为连接键<br />
-right_index:以右侧DataFrame的行索引作为连接键<br />
-sort:是否排序<br />
-suffixes:用于追加到重叠列名的末尾,默认是(_x,_y)</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">left</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;key&#39;</span><span class="p">:[</span><span class="s1">&#39;k0&#39;</span><span class="p">,</span><span class="s1">&#39;k1&#39;</span><span class="p">,</span><span class="s1">&#39;k2&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;A&#39;</span><span class="p">:[</span><span class="s1">&#39;A0&#39;</span><span class="p">,</span><span class="s1">&#39;A1&#39;</span><span class="p">,</span><span class="s1">&#39;A2&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;B&#39;</span><span class="p">:[</span><span class="s1">&#39;B0&#39;</span><span class="p">,</span><span class="s1">&#39;B1&#39;</span><span class="p">,</span><span class="s1">&#39;B2&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">left</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key</th>
-      <th>A</th>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>k0</td>
-      <td>A0</td>
-      <td>B0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>k1</td>
-      <td>A1</td>
-      <td>B1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>k2</td>
-      <td>A2</td>
-      <td>B2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">right</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;key&#39;</span><span class="p">:[</span><span class="s1">&#39;k0&#39;</span><span class="p">,</span><span class="s1">&#39;k1&#39;</span><span class="p">,</span><span class="s1">&#39;k2&#39;</span><span class="p">,</span><span class="s1">&#39;k3&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span><span class="s1">&#39;C2&#39;</span><span class="p">,</span><span class="s1">&#39;C3&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;D&#39;</span><span class="p">:[</span><span class="s1">&#39;D0&#39;</span><span class="p">,</span><span class="s1">&#39;D1&#39;</span><span class="p">,</span><span class="s1">&#39;D2&#39;</span><span class="p">,</span><span class="s1">&#39;D3&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">right</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key</th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>k0</td>
-      <td>C0</td>
-      <td>D0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>k1</td>
-      <td>C1</td>
-      <td>D1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>k2</td>
-      <td>C2</td>
-      <td>D2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>k3</td>
-      <td>C3</td>
-      <td>D3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 外连接</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">right</span><span class="p">,</span><span class="n">left</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key</th>
-      <th>C</th>
-      <th>D</th>
-      <th>A</th>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>k0</td>
-      <td>C0</td>
-      <td>D0</td>
-      <td>A0</td>
-      <td>B0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>k1</td>
-      <td>C1</td>
-      <td>D1</td>
-      <td>A1</td>
-      <td>B1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>k2</td>
-      <td>C2</td>
-      <td>D2</td>
-      <td>A2</td>
-      <td>B2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>k3</td>
-      <td>C3</td>
-      <td>D3</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用隐式创建</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">),</span>
+             <span class="n">index</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">],</span>
+                   <span class="p">[</span><span class="s1">&#39;期中&#39;</span><span class="p">,</span><span class="s1">&#39;期末&#39;</span><span class="p">,</span><span class="s1">&#39;期中&#39;</span><span class="p">,</span><span class="s1">&#39;期末&#39;</span><span class="p">,</span><span class="s1">&#39;期中&#39;</span><span class="p">,</span><span class="s1">&#39;期末&#39;</span><span class="p">]</span>
+                   <span class="p">]</span>
+             <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17179,205 +14854,13 @@ suffixes:用于追加到重叠列名的末尾,默认是(_x,_y)</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Help on function merge in module pandas.core.reshape.merge:
-
-merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, how: &#39;str&#39; = &#39;inner&#39;, on: &#39;IndexLabel | None&#39; = None, left_on: &#39;IndexLabel | None&#39; = None, right_on: &#39;IndexLabel | None&#39; = None, left_index: &#39;bool&#39; = False, right_index: &#39;bool&#39; = False, sort: &#39;bool&#39; = False, suffixes: &#39;Suffixes&#39; = (&#39;_x&#39;, &#39;_y&#39;), copy: &#39;bool&#39; = True, indicator: &#39;bool&#39; = False, validate: &#39;str | None&#39; = None) -&gt; &#39;DataFrame&#39;
-    Merge DataFrame or named Series objects with a database-style join.
-    
-    A named Series object is treated as a DataFrame with a single named column.
-    
-    The join is done on columns or indexes. If joining columns on
-    columns, the DataFrame indexes *will be ignored*. Otherwise if joining indexes
-    on indexes or indexes on a column or columns, the index will be passed on.
-    When performing a cross merge, no column specifications to merge on are
-    allowed.
-    
-    .. warning::
-    
-        If both key columns contain rows where the key is a null value, those
-        rows will be matched against each other. This is different from usual SQL
-        join behaviour and can lead to unexpected results.
-    
-    Parameters
-    ----------
-    left : DataFrame
-    right : DataFrame or named Series
-        Object to merge with.
-    how : {&#39;left&#39;, &#39;right&#39;, &#39;outer&#39;, &#39;inner&#39;, &#39;cross&#39;}, default &#39;inner&#39;
-        Type of merge to be performed.
-    
-        * left: use only keys from left frame, similar to a SQL left outer join;
-          preserve key order.
-        * right: use only keys from right frame, similar to a SQL right outer join;
-          preserve key order.
-        * outer: use union of keys from both frames, similar to a SQL full outer
-          join; sort keys lexicographically.
-        * inner: use intersection of keys from both frames, similar to a SQL inner
-          join; preserve the order of the left keys.
-        * cross: creates the cartesian product from both frames, preserves the order
-          of the left keys.
-    
-          .. versionadded:: 1.2.0
-    
-    on : label or list
-        Column or index level names to join on. These must be found in both
-        DataFrames. If `on` is None and not merging on indexes then this defaults
-        to the intersection of the columns in both DataFrames.
-    left_on : label or list, or array-like
-        Column or index level names to join on in the left DataFrame. Can also
-        be an array or list of arrays of the length of the left DataFrame.
-        These arrays are treated as if they are columns.
-    right_on : label or list, or array-like
-        Column or index level names to join on in the right DataFrame. Can also
-        be an array or list of arrays of the length of the right DataFrame.
-        These arrays are treated as if they are columns.
-    left_index : bool, default False
-        Use the index from the left DataFrame as the join key(s). If it is a
-        MultiIndex, the number of keys in the other DataFrame (either the index
-        or a number of columns) must match the number of levels.
-    right_index : bool, default False
-        Use the index from the right DataFrame as the join key. Same caveats as
-        left_index.
-    sort : bool, default False
-        Sort the join keys lexicographically in the result DataFrame. If False,
-        the order of the join keys depends on the join type (how keyword).
-    suffixes : list-like, default is (&#34;_x&#34;, &#34;_y&#34;)
-        A length-2 sequence where each element is optionally a string
-        indicating the suffix to add to overlapping column names in
-        `left` and `right` respectively. Pass a value of `None` instead
-        of a string to indicate that the column name from `left` or
-        `right` should be left as-is, with no suffix. At least one of the
-        values must not be None.
-    copy : bool, default True
-        If False, avoid copy if possible.
-    indicator : bool or str, default False
-        If True, adds a column to the output DataFrame called &#34;_merge&#34; with
-        information on the source of each row. The column can be given a different
-        name by providing a string argument. The column will have a Categorical
-        type with the value of &#34;left_only&#34; for observations whose merge key only
-        appears in the left DataFrame, &#34;right_only&#34; for observations
-        whose merge key only appears in the right DataFrame, and &#34;both&#34;
-        if the observation&#39;s merge key is found in both DataFrames.
-    
-    validate : str, optional
-        If specified, checks if merge is of specified type.
-    
-        * &#34;one_to_one&#34; or &#34;1:1&#34;: check if merge keys are unique in both
-          left and right datasets.
-        * &#34;one_to_many&#34; or &#34;1:m&#34;: check if merge keys are unique in left
-          dataset.
-        * &#34;many_to_one&#34; or &#34;m:1&#34;: check if merge keys are unique in right
-          dataset.
-        * &#34;many_to_many&#34; or &#34;m:m&#34;: allowed, but does not result in checks.
-    
-    Returns
-    -------
-    DataFrame
-        A DataFrame of the two merged objects.
-    
-    See Also
-    --------
-    merge_ordered : Merge with optional filling/interpolation.
-    merge_asof : Merge on nearest keys.
-    DataFrame.join : Similar method using indices.
-    
-    Notes
-    -----
-    Support for specifying index levels as the `on`, `left_on`, and
-    `right_on` parameters was added in version 0.23.0
-    Support for merging named Series objects was added in version 0.24.0
-    
-    Examples
-    --------
-    &gt;&gt;&gt; df1 = pd.DataFrame({&#39;lkey&#39;: [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;],
-    ...                     &#39;value&#39;: [1, 2, 3, 5]})
-    &gt;&gt;&gt; df2 = pd.DataFrame({&#39;rkey&#39;: [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;],
-    ...                     &#39;value&#39;: [5, 6, 7, 8]})
-    &gt;&gt;&gt; df1
-        lkey value
-    0   foo      1
-    1   bar      2
-    2   baz      3
-    3   foo      5
-    &gt;&gt;&gt; df2
-        rkey value
-    0   foo      5
-    1   bar      6
-    2   baz      7
-    3   foo      8
-    
-    Merge df1 and df2 on the lkey and rkey columns. The value columns have
-    the default suffixes, _x and _y, appended.
-    
-    &gt;&gt;&gt; df1.merge(df2, left_on=&#39;lkey&#39;, right_on=&#39;rkey&#39;)
-      lkey  value_x rkey  value_y
-    0  foo        1  foo        5
-    1  foo        1  foo        8
-    2  foo        5  foo        5
-    3  foo        5  foo        8
-    4  bar        2  bar        6
-    5  baz        3  baz        7
-    
-    Merge DataFrames df1 and df2 with specified left and right suffixes
-    appended to any overlapping columns.
-    
-    &gt;&gt;&gt; df1.merge(df2, left_on=&#39;lkey&#39;, right_on=&#39;rkey&#39;,
-    ...           suffixes=(&#39;_left&#39;, &#39;_right&#39;))
-      lkey  value_left rkey  value_right
-    0  foo           1  foo            5
-    1  foo           1  foo            8
-    2  foo           5  foo            5
-    3  foo           5  foo            8
-    4  bar           2  bar            6
-    5  baz           3  baz            7
-    
-    Merge DataFrames df1 and df2, but raise an exception if the DataFrames have
-    any overlapping columns.
-    
-    &gt;&gt;&gt; df1.merge(df2, left_on=&#39;lkey&#39;, right_on=&#39;rkey&#39;, suffixes=(False, False))
-    Traceback (most recent call last):
-    ...
-    ValueError: columns overlap but no suffix specified:
-        Index([&#39;value&#39;], dtype=&#39;object&#39;)
-    
-    &gt;&gt;&gt; df1 = pd.DataFrame({&#39;a&#39;: [&#39;foo&#39;, &#39;bar&#39;], &#39;b&#39;: [1, 2]})
-    &gt;&gt;&gt; df2 = pd.DataFrame({&#39;a&#39;: [&#39;foo&#39;, &#39;baz&#39;], &#39;c&#39;: [3, 4]})
-    &gt;&gt;&gt; df1
-          a  b
-    0   foo  1
-    1   bar  2
-    &gt;&gt;&gt; df2
-          a  c
-    0   foo  3
-    1   baz  4
-    
-    &gt;&gt;&gt; df1.merge(df2, how=&#39;inner&#39;, on=&#39;a&#39;)
-          a  b  c
-    0   foo  1  3
-    
-    &gt;&gt;&gt; df1.merge(df2, how=&#39;left&#39;, on=&#39;a&#39;)
-          a  b  c
-    0   foo  1  3.0
-    1   bar  2  NaN
-    
-    &gt;&gt;&gt; df1 = pd.DataFrame({&#39;left&#39;: [&#39;foo&#39;, &#39;bar&#39;]})
-    &gt;&gt;&gt; df2 = pd.DataFrame({&#39;right&#39;: [7, 8]})
-    &gt;&gt;&gt; df1
-        left
-    0   foo
-    1   bar
-    &gt;&gt;&gt; df2
-        right
-    0   7
-    1   8
-    
-    &gt;&gt;&gt; df1.merge(df2, how=&#39;cross&#39;)
-       left  right
-    0   foo      7
-    1   foo      8
-    2   bar      7
-    3   bar      8
-
+<pre>A  期中    97
+   期末    59
+B  期中    56
+   期末    34
+C  期中    19
+   期末    43
+dtype: int32
 </pre>
 </div>
 </div>
@@ -17391,11 +14874,11 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 右连接</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">right</span><span class="p">,</span><span class="n">left</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 取第一层索引下的数据</span>
+<span class="n">s</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -17411,64 +14894,15 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>key</th>
-      <th>C</th>
-      <th>D</th>
-      <th>A</th>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>k0</td>
-      <td>C0</td>
-      <td>D0</td>
-      <td>A0</td>
-      <td>B0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>k1</td>
-      <td>C1</td>
-      <td>D1</td>
-      <td>A1</td>
-      <td>B1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>k2</td>
-      <td>C2</td>
-      <td>D2</td>
-      <td>A2</td>
-      <td>B2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>期中    97
+期末    59
+dtype: int32</pre>
 </div>
 
 </div>
@@ -17482,14 +14916,11 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">left1</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;A&#39;</span><span class="p">:[</span><span class="s1">&#39;A0&#39;</span><span class="p">,</span><span class="s1">&#39;A1&#39;</span><span class="p">,</span><span class="s1">&#39;A2&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;B&#39;</span><span class="p">:[</span><span class="s1">&#39;B0&#39;</span><span class="p">,</span><span class="s1">&#39;B1&#39;</span><span class="p">,</span><span class="s1">&#39;B2&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">left1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 取多个第一层索引数据</span>
+<span class="n">s</span><span class="p">[[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -17505,52 +14936,17 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>A0</td>
-      <td>B0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>A1</td>
-      <td>B1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>A2</td>
-      <td>B2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>A  期中    97
+   期末    59
+B  期中    56
+   期末    34
+dtype: int32</pre>
 </div>
 
 </div>
@@ -17559,6 +14955,97 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">][</span><span class="s1">&#39;期中&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>97</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用iloc的时候索引的最大值为最内层索引个数</span>
+<span class="n">s</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>19</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>DataFrame</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17567,11 +15054,13 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">right1</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span><span class="s1">&#39;C2&#39;</span><span class="p">,</span><span class="s1">&#39;C3&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;D&#39;</span><span class="p">:[</span><span class="s1">&#39;D0&#39;</span><span class="p">,</span><span class="s1">&#39;D1&#39;</span><span class="p">,</span><span class="s1">&#39;D2&#39;</span><span class="p">,</span><span class="s1">&#39;D3&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">right1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">90</span><span class="p">],</span>
+                  <span class="n">index</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;小说&#39;</span><span class="p">,</span><span class="s1">&#39;小说&#39;</span><span class="p">,</span><span class="s1">&#39;小说&#39;</span><span class="p">,</span><span class="s1">&#39;散文随笔&#39;</span><span class="p">,</span><span class="s1">&#39;散文随笔&#39;</span><span class="p">,</span><span class="s1">&#39;散文随笔&#39;</span><span class="p">,</span><span class="s1">&#39;传记&#39;</span><span class="p">,</span><span class="s1">&#39;传记&#39;</span><span class="p">,</span><span class="s1">&#39;传记&#39;</span><span class="p">],</span>
+                        <span class="p">[</span><span class="s1">&#39;高三上的邮局&#39;</span><span class="p">,</span><span class="s1">&#39;失踪的总统&#39;</span><span class="p">,</span><span class="s1">&#39;绿毛水怪&#39;</span><span class="p">,</span><span class="s1">&#39;皮囊&#39;</span><span class="p">,</span><span class="s1">&#39;浮生六记&#39;</span><span class="p">,</span>
+                         <span class="s1">&#39;自在独行&#39;</span><span class="p">,</span><span class="s1">&#39;梅西&#39;</span><span class="p">,</span><span class="s1">&#39;老舍自传&#39;</span><span class="p">,</span><span class="s1">&#39;库里传&#39;</span><span class="p">]],</span>
+                   <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;peice&#39;</span><span class="p">]</span>
+                  <span class="p">)</span>
+<span class="n">df3</span>
 </pre></div>
 
      </div>
@@ -17610,120 +15099,49 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>C0</td>
-      <td>D0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>C1</td>
-      <td>D1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>C2</td>
-      <td>D2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>C3</td>
-      <td>D3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用merge来拼接2个没有共同列但有共同行索引的DataFrame对象</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left1</span><span class="p">,</span><span class="n">right1</span><span class="p">,</span>
-         <span class="c1">#这里是使用2个DataFrame对象的行索引来连接</span>
-         <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">right_index</span><span class="o">=</span><span class="kc">True</span>
-        <span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
       <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
+      <th>peice</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>A0</td>
-      <td>B0</td>
-      <td>C0</td>
-      <td>D0</td>
+      <th rowspan="3" valign="top">小说</th>
+      <th>高三上的邮局</th>
+      <td>10</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>A1</td>
-      <td>B1</td>
-      <td>C1</td>
-      <td>D1</td>
+      <th>失踪的总统</th>
+      <td>20</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>A2</td>
-      <td>B2</td>
-      <td>C2</td>
-      <td>D2</td>
+      <th>绿毛水怪</th>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">散文随笔</th>
+      <th>皮囊</th>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>浮生六记</th>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>自在独行</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">传记</th>
+      <th>梅西</th>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>老舍自传</th>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>库里传</th>
+      <td>90</td>
     </tr>
   </tbody>
 </table>
@@ -17736,472 +15154,6 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">left2</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;A&#39;</span><span class="p">:[</span><span class="s1">&#39;A0&#39;</span><span class="p">,</span><span class="s1">&#39;A1&#39;</span><span class="p">,</span><span class="s1">&#39;A2&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;B&#39;</span><span class="p">:[</span><span class="s1">&#39;B0&#39;</span><span class="p">,</span><span class="s1">&#39;B1&#39;</span><span class="p">,</span><span class="s1">&#39;B2&#39;</span><span class="p">],</span>
-<span class="p">},</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;tow&#39;</span><span class="p">,</span><span class="s1">&#39;three&#39;</span><span class="p">])</span>
-<span class="n">left2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>one</th>
-      <td>A0</td>
-      <td>B0</td>
-    </tr>
-    <tr>
-      <th>tow</th>
-      <td>A1</td>
-      <td>B1</td>
-    </tr>
-    <tr>
-      <th>three</th>
-      <td>A2</td>
-      <td>B2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">right2</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span><span class="s1">&#39;C2&#39;</span><span class="p">,</span><span class="s1">&#39;C3&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;D&#39;</span><span class="p">:[</span><span class="s1">&#39;D0&#39;</span><span class="p">,</span><span class="s1">&#39;D1&#39;</span><span class="p">,</span><span class="s1">&#39;D2&#39;</span><span class="p">,</span><span class="s1">&#39;D3&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">right2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>C0</td>
-      <td>D0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>C1</td>
-      <td>D1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>C2</td>
-      <td>D2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>C3</td>
-      <td>D3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用merge来拼接2个没有共同列且没有共同行索引的DataFrame对象</span>
-<span class="c1"># pd.merge(left2,right2,</span>
-         <span class="c1">#这里是使用2个DataFrame对象的行索引来连接</span>
-<span class="c1">#          left_index=True,</span>
-<span class="c1">#          right_index=True,</span>
-<span class="c1">#          left_on=&#39;A&#39;</span>
-<span class="c1">#         )</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>3.DataFrame.join(other, on = None, how = 'left', lsuffix = '', rsuffix = '', sort: 'bool' = False)<br />
-other:数据<br />
-on:用于连接的列名<br />
-how:数据连接方式,可选参数:{'left', 'right', 'outer', 'inner'}<br />
-lsuffix:左侧重叠的列名后添加的后缀<br />
-rsuffix:右侧重叠的列名后添加的后缀<br />
-sort:是否根据连接键对合并的数据进行排序</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">left3</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;a0&#39;</span><span class="p">,</span><span class="s1">&#39;a1&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;b1&#39;</span><span class="p">,</span><span class="s1">&#39;b2&#39;</span><span class="p">],</span>
-<span class="p">})</span>
-<span class="n">left3</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>a</th>
-      <th>b</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>a0</td>
-      <td>b1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>a1</td>
-      <td>b2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">right3</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;c0&#39;</span><span class="p">,</span><span class="s1">&#39;c1&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;d&#39;</span><span class="p">:[</span><span class="s1">&#39;d1&#39;</span><span class="p">,</span><span class="s1">&#39;d2&#39;</span><span class="p">],</span>
-<span class="p">},</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NO0&#39;</span><span class="p">,</span><span class="s1">&#39;NO1&#39;</span><span class="p">])</span>
-<span class="n">right3</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>c</th>
-      <th>d</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO0</th>
-      <td>c0</td>
-      <td>d1</td>
-    </tr>
-    <tr>
-      <th>NO1</th>
-      <td>c1</td>
-      <td>d2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用join合并2个没有共同行索引或者列名的数据时，other对应的数据会用nan填充</span>
-<span class="n">right3</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">left3</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>c</th>
-      <th>d</th>
-      <th>a</th>
-      <th>b</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO0</th>
-      <td>c0</td>
-      <td>d1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>NO1</th>
-      <td>c1</td>
-      <td>d2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE">&#21024;&#38500;&#25968;&#25454;<a class="anchor-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1.使用del关键字</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -18210,8 +15162,8 @@ sort:是否根据连接键对合并的数据进行排序</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">right3</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">left3</span><span class="p">)</span>
-<span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># loc[&#39;第一层行索引名称&#39;,&#39;第二层行索引名称&#39;][&#39;列索引&#39;]</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;小说&#39;</span><span class="p">,</span><span class="s1">&#39;绿毛水怪&#39;</span><span class="p">][</span><span class="s1">&#39;peice&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -18231,72 +15183,15 @@ sort:是否根据连接键对合并的数据进行排序</p>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>c</th>
-      <th>d</th>
-      <th>a</th>
-      <th>b</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>NO0</th>
-      <td>c0</td>
-      <td>d1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>NO1</th>
-      <td>c1</td>
-      <td>d2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>30</pre>
 </div>
 
 </div>
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># del +需要删除的数据</span>
-<span class="k">del</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -18307,7 +15202,7 @@ sort:是否根据连接键对合并的数据进行排序</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -18327,6 +15222,59 @@ sort:是否根据连接键对合并的数据进行排序</p>
 
 
 
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>peice    80
+Name: (传记, 老舍自传), dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>多级索引的相关操作</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1.使用swaplevel()交换分层顺序。交换内层和外层索引的位置</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">swaplevel</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+
+
+
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped>
@@ -18346,22 +15294,1091 @@ sort:是否根据连接键对合并的数据进行排序</p>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>c</th>
-      <th>d</th>
-      <th>b</th>
+      <th></th>
+      <th>peice</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>NO0</th>
-      <td>c0</td>
-      <td>d1</td>
+      <th>高三上的邮局</th>
+      <th>小说</th>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>失踪的总统</th>
+      <th>小说</th>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>绿毛水怪</th>
+      <th>小说</th>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>皮囊</th>
+      <th>散文随笔</th>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>浮生六记</th>
+      <th>散文随笔</th>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>自在独行</th>
+      <th>散文随笔</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>梅西</th>
+      <th>传记</th>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>老舍自传</th>
+      <th>传记</th>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>库里传</th>
+      <th>传记</th>
+      <td>90</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>2.使用sort_index()可以通过分层索引对数据排序<br />
+DataFrame.sort_index(axis= 0, ascending = True, inplace= False)<br />
+axis:轴<br />
+ascending:表示是否升序<br />
+inplace:是否修改原数据</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_obj</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;word&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;num&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="n">index</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">],</span>
+          <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]]</span>
+<span class="p">)</span>
+<span class="n">df_obj</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>word</th>
+      <th>num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">A</th>
+      <th>1</th>
+      <td>a</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>b</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>d</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">C</th>
+      <th>3</th>
+      <td>e</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>f</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">B</th>
+      <th>4</th>
+      <td>d</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>l</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 按索引排序</span>
+<span class="c1"># 排序时是从外到里</span>
+<span class="n">df_obj</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>word</th>
+      <th>num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">A</th>
+      <th>1</th>
+      <td>a</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>d</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>b</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">B</th>
+      <th>4</th>
+      <td>d</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>l</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">C</th>
+      <th>1</th>
+      <td>f</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>e</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 按值排序</span>
+<span class="n">df_obj</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;num&#39;</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>word</th>
+      <th>num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top">A</th>
+      <th>1</th>
+      <td>a</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>b</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <th>2</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <th>5</th>
+      <td>s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <th>1</th>
+      <td>f</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <th>8</th>
+      <td>l</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>A</th>
+      <th>2</th>
+      <td>d</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <th>3</th>
+      <td>e</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <th>4</th>
+      <td>d</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>算术运算</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Series</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nan和任何数据进行计算都会得到nan，nan的数据类型是float</span>
+<span class="n">s1</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mf">8.</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">34</span><span class="p">]</span>
+<span class="c1">#              ,index=[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;]</span>
+            <span class="p">)</span>
+<span class="n">s1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0     8.0
+1     1.0
+2     2.0
+3    34.0
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s2</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="o">-</span><span class="mf">3.0</span><span class="p">,</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mf">2.364</span><span class="p">]</span>
+<span class="c1">#              ,index=[&#39;a&#39;,&#39;f&#39;,&#39;c&#39;,&#39;g&#39;,&#39;e&#39;]</span>
+            <span class="p">)</span>
+<span class="n">s2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0    -3.000
+1    -2.500
+2    10.000
+3    15.000
+4     2.364
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0     5.0
+1    -1.5
+2    12.0
+3    49.0
+4     NaN
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0     5.0
+1    -1.5
+2    12.0
+3    49.0
+4     NaN
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>DataFrame</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)),</span><span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;bj&#39;</span><span class="p">,</span><span class="s1">&#39;sh&#39;</span><span class="p">,</span><span class="s1">&#39;sz&#39;</span><span class="p">])</span>
+<span class="n">df5</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df6</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)),</span><span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abd&#39;</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;bj&#39;</span><span class="p">,</span><span class="s1">&#39;sh&#39;</span><span class="p">,</span><span class="s1">&#39;sz&#39;</span><span class="p">,</span><span class="s1">&#39;cs&#39;</span><span class="p">])</span>
+<span class="n">df6</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>cs</th>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用算术运算符进行计算</span>
+<span class="n">df5</span><span class="o">+</span><span class="n">df6</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>NO1</th>
-      <td>c1</td>
-      <td>d2</td>
+      <th>cs</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>12.0</td>
+      <td>14.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span><span class="o">*</span><span class="n">df6</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>cs</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>9.0</td>
+      <td>16.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>36.0</td>
+      <td>49.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="n">df6</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>cs</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>9.0</td>
+      <td>16.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>36.0</td>
+      <td>49.0</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -18382,12 +16399,7 @@ sort:是否根据连接键对合并的数据进行排序</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2.DataFrame.drop(labels= None, axis = 0, index = None, columns = None,inplace= False)<br />
-labels:要删除的行或者列，如果说需要删除多个，就需要传入一个列表<br />
-axis:数据处理的方向<br />
-index:要删除的行<br />
-columns:需要删除的列<br />
-inplace:是否修改原数据</p>
+<p>两种数据结构之间的运算</p>
 
 </div>
 </div>
@@ -18397,10 +16409,11 @@ inplace:是否修改原数据</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df7</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)),</span><span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;bj&#39;</span><span class="p">,</span><span class="s1">&#39;sh&#39;</span><span class="p">,</span><span class="s1">&#39;sz&#39;</span><span class="p">])</span>
+<span class="n">df7</span>
 </pre></div>
 
      </div>
@@ -18416,7 +16429,7 @@ inplace:是否修改原数据</p>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 
 
 
@@ -18439,23 +16452,29 @@ inplace:是否修改原数据</p>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>c</th>
-      <th>d</th>
+      <th>a</th>
       <th>b</th>
+      <th>c</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>NO0</th>
-      <td>c0</td>
-      <td>d1</td>
-      <td>NaN</td>
+      <th>bj</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
-      <th>NO1</th>
-      <td>c1</td>
-      <td>d2</td>
-      <td>NaN</td>
+      <th>sh</th>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
     </tr>
   </tbody>
 </table>
@@ -18473,11 +16492,11 @@ inplace:是否修改原数据</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data1</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">data1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s5</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">))</span>
+<span class="n">s5</span>
 </pre></div>
 
      </div>
@@ -18491,104 +16510,359 @@ inplace:是否修改原数据</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[76]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In [44], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> data1 <span style="color: rgb(98,98,98)">=</span> data<span style="color: rgb(98,98,98)">.</span>drop([<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">a</span><span style="color: rgb(175,0,0)">&#39;</span>,<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">b</span><span style="color: rgb(175,0,0)">&#39;</span>],axis<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">1</span>)
-<span class="ansi-green-fg">      2</span> data1
 
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\util\_decorators.py:317</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
-<span class="ansi-green-fg">    311</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">len</span>(args) <span style="color: rgb(98,98,98)">&gt;</span> num_allow_args:
-<span class="ansi-green-fg">    312</span>     warnings<span style="color: rgb(98,98,98)">.</span>warn(
-<span class="ansi-green-fg">    313</span>         msg<span style="color: rgb(98,98,98)">.</span>format(arguments<span style="color: rgb(98,98,98)">=</span>arguments),
-<span class="ansi-green-fg">    314</span>         <span class="ansi-bold" style="color: rgb(215,95,95)">FutureWarning</span>,
-<span class="ansi-green-fg">    315</span>         stacklevel<span style="color: rgb(98,98,98)">=</span>find_stack_level(inspect<span style="color: rgb(98,98,98)">.</span>currentframe()),
-<span class="ansi-green-fg">    316</span>     )
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 317</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">func</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\core\frame.py:5391</span>, in <span class="ansi-cyan-fg">DataFrame.drop</span><span class="ansi-blue-intense-fg ansi-bold">(self, labels, axis, index, columns, level, inplace, errors)</span>
-<span class="ansi-green-fg">   5243</span> <span style="color: rgb(175,0,255)">@deprecate_nonkeyword_arguments</span>(version<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">None</span>, allowed_args<span style="color: rgb(98,98,98)">=</span>[<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">self</span><span style="color: rgb(175,0,0)">&#34;</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">labels</span><span style="color: rgb(175,0,0)">&#34;</span>])
-<span class="ansi-green-fg">   5244</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">drop</span>(  <span style="color: rgb(95,135,135)"># type: ignore[override]</span>
-<span class="ansi-green-fg">   5245</span>     <span style="color: rgb(0,135,0)">self</span>,
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">   5252</span>     errors: IgnoreRaise <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">raise</span><span style="color: rgb(175,0,0)">&#34;</span>,
-<span class="ansi-green-fg">   5253</span> ) <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">&gt;</span> DataFrame <span style="color: rgb(98,98,98)">|</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">   5254</span>     <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-fg">   5255</span> <span style="color: rgb(175,0,0)">    Drop specified labels from rows or columns.</span>
-<span class="ansi-green-fg">   5256</span> 
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">   5389</span> <span style="color: rgb(175,0,0)">            weight  1.0     0.8</span>
-<span class="ansi-green-fg">   5390</span> <span style="color: rgb(175,0,0)">    &#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 5391</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">super</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">drop</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-fg">   5392</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">labels</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">labels</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5393</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5394</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5395</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5396</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5397</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">inplace</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">inplace</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5398</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-fg">   5399</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\util\_decorators.py:317</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
-<span class="ansi-green-fg">    311</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">len</span>(args) <span style="color: rgb(98,98,98)">&gt;</span> num_allow_args:
-<span class="ansi-green-fg">    312</span>     warnings<span style="color: rgb(98,98,98)">.</span>warn(
-<span class="ansi-green-fg">    313</span>         msg<span style="color: rgb(98,98,98)">.</span>format(arguments<span style="color: rgb(98,98,98)">=</span>arguments),
-<span class="ansi-green-fg">    314</span>         <span class="ansi-bold" style="color: rgb(215,95,95)">FutureWarning</span>,
-<span class="ansi-green-fg">    315</span>         stacklevel<span style="color: rgb(98,98,98)">=</span>find_stack_level(inspect<span style="color: rgb(98,98,98)">.</span>currentframe()),
-<span class="ansi-green-fg">    316</span>     )
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 317</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">func</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\core\generic.py:4510</span>, in <span class="ansi-cyan-fg">NDFrame.drop</span><span class="ansi-blue-intense-fg ansi-bold">(self, labels, axis, index, columns, level, inplace, errors)</span>
-<span class="ansi-green-fg">   4508</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> axis, labels <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> axes<span style="color: rgb(98,98,98)">.</span>items():
-<span class="ansi-green-fg">   4509</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> labels <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 4510</span>         obj <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_drop_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">labels</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   4512</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> inplace:
-<span class="ansi-green-fg">   4513</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_update_inplace(obj)
-
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\core\generic.py:4551</span>, in <span class="ansi-cyan-fg">NDFrame._drop_axis</span><span class="ansi-blue-intense-fg ansi-bold">(self, labels, axis, level, errors, only_slice)</span>
-<span class="ansi-green-fg">   4549</span>         new_axis <span style="color: rgb(98,98,98)">=</span> axis<span style="color: rgb(98,98,98)">.</span>drop(labels, level<span style="color: rgb(98,98,98)">=</span>level, errors<span style="color: rgb(98,98,98)">=</span>errors)
-<span class="ansi-green-fg">   4550</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 4551</span>         new_axis <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">drop</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">labels</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">errors</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   4552</span>     indexer <span style="color: rgb(98,98,98)">=</span> axis<span style="color: rgb(98,98,98)">.</span>get_indexer(new_axis)
-<span class="ansi-green-fg">   4554</span> <span style="color: rgb(95,135,135)"># Case for non-unique axis</span>
-<span class="ansi-green-fg">   4555</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-
-File <span class="ansi-green-intense-fg ansi-bold">e:\python3.8\lib\site-packages\pandas\core\indexes\base.py:6972</span>, in <span class="ansi-cyan-fg">Index.drop</span><span class="ansi-blue-intense-fg ansi-bold">(self, labels, errors)</span>
-<span class="ansi-green-fg">   6970</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> mask<span style="color: rgb(98,98,98)">.</span>any():
-<span class="ansi-green-fg">   6971</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> errors <span style="color: rgb(98,98,98)">!=</span> <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">ignore</span><span style="color: rgb(175,0,0)">&#34;</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 6972</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">KeyError</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">&#34;</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span style="color: rgb(0,135,0)">list</span>(labels[mask])<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> not found in axis</span><span style="color: rgb(175,0,0)">&#34;</span>)
-<span class="ansi-green-fg">   6973</span>     indexer <span style="color: rgb(98,98,98)">=</span> indexer[<span style="color: rgb(98,98,98)">~</span>mask]
-<span class="ansi-green-fg">   6974</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>delete(indexer)
-
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: &#34;[&#39;a&#39;] not found in axis&#34;</pre>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>a    0
+b    1
+c    2
+dtype: int64</pre>
 </div>
 
 </div>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Series和DataFrame在进行计算的时候，Series的索引可以理解为DataFrame中对应的列名</span>
+<span class="n">df7</span><span class="o">+</span><span class="n">s5</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>3</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df7</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s5</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>3</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df7</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[78]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bj</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>sh</th>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>sz</th>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iloc是下标切片还是下标索引？</span>
+<span class="c1"># iloc是一种切片方式，但是里面的参数是索引下标</span>
+<span class="c1"># iloc = index+loc</span>
+<span class="n">df7</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="c1">#获取第一列所有行的数据</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>bj    0
+sh    3
+sz    6
+Name: a, dtype: int32</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># loc也是一种切片方式，里面的参数是索引名称</span>
+<span class="n">df7</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>bj    0
+sh    3
+sz    6
+Name: a, dtype: int32</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
